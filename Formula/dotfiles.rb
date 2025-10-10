@@ -1,8 +1,8 @@
 class Dotfiles < Formula
   desc "Modern dotfiles manager with Homebrew and GNU Stow integration"
   homepage "https://github.com/wsoule/dotfiles-cli"
-  url "https://github.com/wsoule/dotfiles-cli/archive/refs/tags/v2.0.1.tar.gz"
-  sha256 "5f715c4ddf7dfe2e06aad52d3632059de3e500d4afdefc55e45ac52127503a7a"
+  url "https://github.com/wsoule/dotfiles-cli/archive/refs/tags/v2.2.0.tar.gz"
+  sha256 "bdec55d17d00cda6278b7e9d9d6f4a3f2e108cd645a62f39da3b217fd609c10f"
   license "MIT"
   head "https://github.com/wsoule/dotfiles-cli.git", branch: "main"
 
