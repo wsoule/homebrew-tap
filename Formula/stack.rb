@@ -5,46 +5,46 @@
 class Stack < Formula
   desc "Stacked branch workflow tool for managing atomic commits"
   homepage "https://github.com/wsoule/stack"
-  version "0.1.3"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wsoule/stack/releases/download/v0.1.3/stack_darwin_amd64.tar.gz"
-      sha256 "3eb692e1577c51fdcae7137128bd184ca9ab63fab18afbf91ba638260b5f5522"
+      url "https://github.com/wsoule/stack/releases/download/v0.1.5/stack_darwin_amd64.tar.gz"
+      sha256 "f1678f432c7c416ade15d6c1382fdfc27c24680c6332a06d51eba3f14ca2461c"
 
       def install
-        bin.install "ac"
+        bin.install "st"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wsoule/stack/releases/download/v0.1.3/stack_darwin_arm64.tar.gz"
-      sha256 "154dc5ca31e676a9a525124976d44fc834f1dc5953b12c07f0a0da31b34d15c8"
+      url "https://github.com/wsoule/stack/releases/download/v0.1.5/stack_darwin_arm64.tar.gz"
+      sha256 "3f6af51a4d582d28962684b62d51462f960bfe16ded83f612e5516701f563572"
 
       def install
-        bin.install "ac"
+        bin.install "st"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wsoule/stack/releases/download/v0.1.3/stack_linux_amd64.tar.gz"
-      sha256 "842d44b3af471c3d54f0685c801bafe14bdca9a94b061a546eaef9dce7f196c3"
+      url "https://github.com/wsoule/stack/releases/download/v0.1.5/stack_linux_amd64.tar.gz"
+      sha256 "2e36d77aa5d5e97cfb6fddb846f7500bf5b96c26dc3fd53b66cc910f208b78eb"
       def install
-        bin.install "ac"
+        bin.install "st"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wsoule/stack/releases/download/v0.1.3/stack_linux_arm64.tar.gz"
-      sha256 "fe8d6ee70694bf743eb53e3da71015c9ca7cf211bcbce47d2538e48b049ad063"
+      url "https://github.com/wsoule/stack/releases/download/v0.1.5/stack_linux_arm64.tar.gz"
+      sha256 "15576ea1acf011ec9fdd85fb5048a7b6b533c4c224598e2b2e7da9c9a2d0ad3e"
       def install
-        bin.install "ac"
+        bin.install "st"
       end
     end
   end
 
   test do
-    system "#{bin}/ac", "--help"
+    system "#{bin}/st", "--help"
   end
 end
