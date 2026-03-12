@@ -1,26 +1,26 @@
 class Jjd < Formula
   desc "Jujutsu automation daemon — auto-describe, bookmark, and push with AI"
   homepage "https://github.com/wsoule/jjd"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/wsoule/jjd/releases/download/v#{version}/jjd-darwin-arm64.tar.gz"
-      sha256 "3baf01f3eda949bc65f6a51454a925bc0eea428b922ba8b3a34f8e5f1f5bab0e"
+      sha256 "7ba80c14795a6af2b98368cbdb329434fdaa8420f36662cef410a290c526fd08"
     else
       url "https://github.com/wsoule/jjd/releases/download/v#{version}/jjd-darwin-x64.tar.gz"
-      sha256 "e2374dec08baca2cbbeef3a17f9cb3132fc6095b92d9b00e582f3af0981d96bf"
+      sha256 "029cf9174dedd79f84bc53d6f4ad01bc04fe6c6a82ab470878ab92139149d988"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/wsoule/jjd/releases/download/v#{version}/jjd-linux-arm64.tar.gz"
-      sha256 "8c8196581f1274d62a5ce6a5279fdbfc0fb58ede5421cd85939ffb54862283a1"
+      sha256 "184c35681135dc0a6aebbc35de340c260a6a71a7681184c171bc6da940649479"
     else
       url "https://github.com/wsoule/jjd/releases/download/v#{version}/jjd-linux-x64.tar.gz"
-      sha256 "74ec1d3af32117d6c24223e6e85065e8a964697d25fa5edb951401147ab815e6"
+      sha256 "0e0c7432719d627e72c521d2583d1a150c733b2bc8a48eabb62e492bd6d083d9"
     end
   end
 
