@@ -2,8 +2,8 @@ class LinearTui < Formula
   desc "Keyboard-first Linear client for the terminal"
   homepage "https://github.com/wsoule/linear-tui"
   url "https://github.com/wsoule/linear-tui.git",
-      tag:      "v0.1.0",
-      revision: "c2e91f2f722ad028abd1d89e215c1c73e8d05c4d"
+    tag:      "v0.1.1",
+    revision: "834d23903d2355e4285a68715e4fdea0b1d62fe5"
   license "MIT"
   head "https://github.com/wsoule/linear-tui.git", branch: "main"
 
