@@ -5,6 +5,7 @@ class LinearTui < Formula
     tag:      "v0.1.2",
     revision: "a51cc7a0872c8950e0bad954ca10c316f81513d8"
   license "MIT"
+  preserve_rpath
   head "https://github.com/wsoule/linear-tui.git", branch: "main"
 
   livecheck do
