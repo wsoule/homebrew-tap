@@ -14,7 +14,7 @@ A modern SQL database client with IntelliSense, schema browsing, and git-friendl
 brew install --cask wsoule/tap/query
 ```
 
-Source: <https://github.com/hydrogen-app/Query>
+Source: <https://github.com/wsoule/Query>
 
 ## Formulae
 
