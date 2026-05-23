@@ -2,8 +2,7 @@ cask "query" do
   version "0.1.0-local.1"
   sha256 "849036a6042417dee386e7193135d9d686ae513f8996adaeeaaaedaa093f4b39"
 
-  url "https://github.com/wsoule/Query/releases/download/v#{version}/Query_0.1.0_x64.dmg",
-      verified: "github.com/wsoule/Query/"
+  url "https://github.com/wsoule/Query/releases/download/v#{version}/Query_0.1.0_x64.dmg"
   name "Query"
   desc "Modern SQL database client with git-friendly saved queries"
   homepage "https://github.com/wsoule/Query"
