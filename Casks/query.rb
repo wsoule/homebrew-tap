@@ -9,8 +9,7 @@ cask "query" do
   homepage "https://github.com/wsoule/Query"
 
   livecheck do
-    url :url
-    strategy :github_latest
+    skip "Temporary local x64 release"
   end
 
   depends_on arch: :x86_64
