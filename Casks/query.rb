@@ -1,17 +1,21 @@
 cask "query" do
-  version "0.1.0-local.1"
-  sha256 "849036a6042417dee386e7193135d9d686ae513f8996adaeeaaaedaa093f4b39"
+  arch arm: "aarch64", intel: "x64"
 
-  url "https://github.com/wsoule/Query/releases/download/v#{version}/Query_0.1.0_x64.dmg"
+  version "0.1.1"
+  sha256 arm:   "9a778ab9609a86036236e3dedf76047ea0d29ea89768f400afbbd2a71868cf6c",
+         intel: "2a2177b1f4bfe7d37a3bc8ade58c2cb77948268241b834f47687a0547249dd94"
+
+  url "https://github.com/wsoule/Query/releases/download/v#{version}/Query_#{version}_#{arch}.dmg",
+      verified: "github.com/wsoule/Query/"
   name "Query"
   desc "Modern SQL database client with git-friendly saved queries"
   homepage "https://github.com/wsoule/Query"
 
   livecheck do
-    skip "Temporary local x64 release"
+    url :url
+    strategy :github_latest
   end
 
-  depends_on arch: :x86_64
   depends_on macos: :monterey
 
   app "Query.app"
