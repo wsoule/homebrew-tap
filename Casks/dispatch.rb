@@ -1,17 +1,12 @@
 cask "dispatch" do
-  version "0.1.0"
+  arch arm: "aarch64", intel: "x64"
 
-  on_arm do
-    sha256 "2c84d2a3f49a7d39ba5500c2d24d7ceff7c85037c76bb7a46afe99e4c5f4b599"
+  version "0.1.1"
+  sha256 arm:   "31f3146321d1105fed08868d294efa9dbfefafce57101fea30a8888ef5ffa82f",
+         intel: "2761a71456f2f13eac943b6472629974fd1072bed621ddb9365d130c63ca31bf"
 
-    url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_aarch64.dmg"
-  end
-  on_intel do
-    sha256 "a8aa3b9b0e19487a272a708eed3894c700b6add626388bbe7335516c432c5e50"
-
-    url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_x64.dmg"
-  end
-
+  url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg",
+      verified: "github.com/wsoule/dispatch/"
   name "Dispatch"
   desc "Git-native task tracking and AI-agent orchestration desktop app"
   homepage "https://github.com/wsoule/dispatch"
@@ -32,10 +27,4 @@ cask "dispatch" do
     "~/Library/Saved Application State/dev.dispatch.app.savedState",
     "~/Library/WebKit/dev.dispatch.app",
   ]
-
-  caveats <<~EOS
-    Dispatch is not code-signed or notarized yet. If macOS blocks the first
-    launch, either right-click the app and choose Open, or install with:
-      brew install --cask --no-quarantine dispatch
-  EOS
 end
