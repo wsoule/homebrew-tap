@@ -1,9 +1,9 @@
 cask "dispatch" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.5.0"
-  sha256 arm:   "c7d12f6fd3dd2d84ce29bb979aaa46a887ad14d71ebdcda3ad43aa7378ce1951",
-         intel: "9abf5f101669fe8d0ca5e8ac9790952eebf9cbb5d4f4d9aab79031fb58be49c0"
+  version "0.6.0"
+  sha256 arm:   "39be56f2b88494207d95fe40520681c308bbb01b93e354de26b3280a8d952b27",
+         intel: "489f293bf18817571cbe1ccfd25104f3e37279075bac6baa0b477d69659a0495"
 
   url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg",
       verified: "github.com/wsoule/dispatch/"
@@ -19,6 +19,7 @@ cask "dispatch" do
   depends_on :macos
 
   app "Dispatch.app"
+  binary "#{appdir}/Dispatch.app/Contents/Resources/resources/dispatch-cli", target: "dispatch"
 
   zap trash: [
     "~/Library/Application Support/dev.dispatch.app",
