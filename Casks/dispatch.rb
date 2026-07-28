@@ -1,9 +1,9 @@
 cask "dispatch" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.11.0"
-  sha256 arm:   "9d87bc43307b53ccadd365b4a2b8ce9c02a7421386a237b8db5b3b744e1cc0e2",
-         intel: "4dcba18e3a78f30e7348eff05871fece93ffd0047b6ec530afd93db302226e91"
+  version "0.11.1"
+  sha256 arm:   "38ba40ddd7753a19513556b13c0278b8a2de0549d8a3b5d80f9ac85297b52049",
+         intel: "031a14c57af1084563b20d391e0ee1a01931f22c81873126722183a362df13df"
 
   url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg",
       verified: "github.com/wsoule/dispatch/"
