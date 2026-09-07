@@ -5,8 +5,7 @@ cask "query" do
   sha256 arm:   "9a778ab9609a86036236e3dedf76047ea0d29ea89768f400afbbd2a71868cf6c",
          intel: "2a2177b1f4bfe7d37a3bc8ade58c2cb77948268241b834f47687a0547249dd94"
 
-  url "https://github.com/wsoule/Query/releases/download/v#{version}/Query_#{version}_#{arch}.dmg",
-      verified: "github.com/wsoule/Query/"
+  url "https://github.com/wsoule/Query/releases/download/v#{version}/Query_#{version}_#{arch}.dmg"
   name "Query"
   desc "Modern SQL database client with git-friendly saved queries"
   homepage "https://github.com/wsoule/Query"
