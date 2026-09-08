@@ -1,11 +1,12 @@
 cask "dispatch" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.25.1"
-  sha256 arm:   "837a0b548a75e74b283c9e939bae42542d349ec44ab3aae5c9534499bdcd077a",
-         intel: "49c8b5726c7b414b27a357b4ec26349380fc6e64754e34e73cafe230320c2864"
+  version "0.26.0"
+  sha256 arm:   "0d4bb75d446dd229218e9ca1120088a463522988520c987f055957731e0b03aa",
+         intel: "091be3a0e3348fe18eafe10a5feeb880cc24f9bf78c6463f617d88f58e0ab502"
 
-  url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg"
+  url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg",
+      verified: "github.com/wsoule/dispatch/"
   name "Dispatch"
   desc "Git-native task tracking and AI-agent orchestration desktop app"
   homepage "https://github.com/wsoule/dispatch"
