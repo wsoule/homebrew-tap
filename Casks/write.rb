@@ -21,5 +21,4 @@ cask "write" do
     "~/Library/Preferences/com.wsoule.Write.plist",
     "~/Library/Saved Application State/com.wsoule.Write.savedState",
   ]
-
 end
