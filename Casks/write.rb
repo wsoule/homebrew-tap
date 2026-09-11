@@ -1,6 +1,6 @@
 cask "write" do
-  version "1.0"
-  sha256 "4eec08d948a537000861a574fd20c7f523ab3fe3c53d1eb91b57433b324b8d2a"
+  version "1.1"
+  sha256 "b65043be75409b246001cdc3e9440d801cd02acf542b60f9b6763a3b400813e0"
 
   url "https://github.com/wsoule/Write/releases/download/v#{version}/Write-#{version}.zip",
       verified: "github.com/wsoule/Write/"
