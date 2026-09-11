@@ -1,6 +1,6 @@
 cask "write" do
   version "1.0"
-  sha256 "3dd7648f267f9541f8d83e9567e8a999887689481c88c1532078205a815b48a4"
+  sha256 "4eec08d948a537000861a574fd20c7f523ab3fe3c53d1eb91b57433b324b8d2a"
 
   url "https://github.com/wsoule/Write/releases/download/v#{version}/Write-#{version}.zip",
       verified: "github.com/wsoule/Write/"
@@ -22,9 +22,4 @@ cask "write" do
     "~/Library/Saved Application State/com.wsoule.Write.savedState",
   ]
 
-  caveats <<~EOS
-    Write is signed but not yet notarized. If macOS refuses to open it,
-    right-click Write.app in /Applications and choose Open once, or install with:
-      brew install --cask --no-quarantine wsoule/tap/write
-  EOS
 end

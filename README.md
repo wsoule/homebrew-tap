@@ -18,7 +18,7 @@ Source: <https://github.com/wsoule/Query>
 
 ### write
 
-A dead-simple Markdown writing app for macOS. One window, one column of text, and nothing else in the way. Universal, signed (not yet notarized).
+A dead-simple Markdown writing app for macOS. One window, one column of text, and nothing else in the way. Universal, signed and notarized.
 
 ```sh
 brew install --cask wsoule/tap/write
