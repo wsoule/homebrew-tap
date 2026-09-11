@@ -16,12 +16,12 @@ brew install --cask wsoule/tap/query
 
 Source: <https://github.com/wsoule/Query>
 
-### write
+### write-md
 
 A dead-simple Markdown writing app for macOS. One window, one column of text, and nothing else in the way. Universal, signed and notarized.
 
 ```sh
-brew install --cask wsoule/tap/write
+brew install --cask wsoule/tap/write-md
 ```
 
 Source: <https://github.com/wsoule/Write>

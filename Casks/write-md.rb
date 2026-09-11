@@ -1,9 +1,8 @@
-cask "write" do
+cask "write-md" do
   version "1.1"
   sha256 "b65043be75409b246001cdc3e9440d801cd02acf542b60f9b6763a3b400813e0"
 
-  url "https://github.com/wsoule/Write/releases/download/v#{version}/Write-#{version}.zip",
-      verified: "github.com/wsoule/Write/"
+  url "https://github.com/wsoule/Write/releases/download/v#{version}/Write-#{version}.zip"
   name "Write"
   desc "Dead-simple Markdown writing app: one window, one column of text"
   homepage "https://github.com/wsoule/Write"
