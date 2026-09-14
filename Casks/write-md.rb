@@ -1,6 +1,6 @@
 cask "write-md" do
-  version "1.1.2"
-  sha256 "f3e3ecaf2c843043c4b2b1417ab6c62843169b1cb1b186f48abcf0962b7b813b"
+  version "1.2.0"
+  sha256 "f62ebfc0111efff4ad34ae2ba14ddf65f7a7d6d415d804745f845f8023aba7f6"
 
   url "https://github.com/wsoule/Write/releases/download/v#{version}/Write-#{version}.zip"
   name "Write"
