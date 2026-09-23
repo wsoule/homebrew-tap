@@ -47,6 +47,23 @@ linear-tui
 Create a key from Linear's API settings page:
 <https://linear.app/settings/account/security>
 
+### fuck
+
+Typed a command wrong? Say `fuck`. Jev picks the one you meant from your zsh history.
+
+```sh
+brew install wsoule/tap/fuck
+```
+
+Add to `~/.zshrc`:
+
+```sh
+export TYPESAFE_API_KEY=...
+eval "$(fuck --alias)"
+```
+
+Source: <https://github.com/wsoule/fuck>
+
 ### Other formulae
 
 - **stack** — stacked-branch workflow for atomic commits
