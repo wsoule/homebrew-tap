@@ -5,8 +5,7 @@ cask "dispatch" do
   sha256 arm:   "07219619e6e371b0ea845dd8a56a744390bc2641340c78c849eb0173f9b29f08",
          intel: "8298900120d82076f61289764672bc926e684799921f1b7ea1bf7e12f96d5e29"
 
-  url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg",
-      verified: "github.com/wsoule/dispatch/"
+  url "https://github.com/wsoule/dispatch/releases/download/v#{version}/Dispatch_#{version}_#{arch}.dmg"
   name "Dispatch"
   desc "Git-native task tracking and AI-agent orchestration desktop app"
   homepage "https://github.com/wsoule/dispatch"
@@ -16,7 +15,7 @@ cask "dispatch" do
     strategy :github_latest
   end
 
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "Dispatch.app"
   binary "#{appdir}/Dispatch.app/Contents/Resources/resources/dispatch-cli", target: "dispatch"
